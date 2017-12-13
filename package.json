@@ -1,0 +1,31 @@
+{
+  "name": "Gridly",
+  "version": "1.0.0",
+  "description": "CSSFramework for rapid development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "gridly"
+  ],
+  "author": "Mark Starkey",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect-php": "^1.0.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2"
+  }
+}

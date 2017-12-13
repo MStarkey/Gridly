@@ -1,0 +1,18 @@
+/* Medium size (Tablet portrait and higher) */
+@media (min-width: 550px) {
+
+}
+/* Large size (Tablet landscape and higher) */
+@media (min-width: 1025px) {
+
+}
+
+/* Desktop and larger */
+@media (min-width: 1450px) {
+
+}
+
+/* Desktop and larger */
+@media (min-width: 2000px) {
+
+}

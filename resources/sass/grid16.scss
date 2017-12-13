@@ -1,0 +1,194 @@
+/* Grid 16
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#grid16{
+  .s1              { width: 6.25%; }
+  .s2              { width: 12.5%; }
+  .s3              { width: 18.75%; }
+  .s4              { width: 25%; }
+  .s5              { width: 31.25%; }
+  .s6              { width: 37.5%; }
+  .s7              { width: 43.75%; }
+  .s8              { width: 50%; }
+  .s9              { width: 56.25%; }
+  .s10             { width: 62.5%; }
+  .s11             { width: 68.75%; }
+  .s12             { width: 75%; }
+  .s13             { width: 81.25%; }
+  .s14             { width: 87.5%; }
+  .s15             { width: 93.75%; }
+  .s16             { width: 100%; }
+
+  .s1-3             { width: 33.333333%; }
+  .s2-3             { width: 66.666666%; }
+
+
+  /* Offsets */
+  .offset-s1              { margin-left: 6.25%; }
+  .offset-s2              { margin-left: 12.5%; }
+  .offset-s3              { margin-left: 18.75%; }
+  .offset-s4              { margin-left: 25%; }
+  .offset-s5              { margin-left: 31.25%; }
+  .offset-s6              { margin-left: 37.5%; }
+  .offset-s7              { margin-left: 43.75%; }
+  .offset-s8              { margin-left: 50%; }
+  .offset-s9              { margin-left: 56.25%; }
+  .offset-s10             { margin-left: 62.5%; }
+  .offset-s11             { margin-left: 68.75%; }
+  .offset-s12             { margin-left: 75%; }
+  .offset-s13             { margin-left: 81.25%; }
+  .offset-s14             { margin-left: 87.5%; }
+  .offset-s15             { margin-left: 93.75%; }
+
+  .offset-s1-3            { margin-left: 33.333333%; }
+  .offset-s2-3            { margin-left: 66.666666%; }
+
+  /* Outsets */
+  .outset-s1              { margin-right: 6.25%; }
+  .outset-s2              { margin-right: 12.5%; }
+  .outset-s3              { margin-right: 18.75%; }
+  .outset-s4              { margin-right: 25%; }
+  .outset-s5              { margin-right: 31.25%; }
+  .outset-s6              { margin-right: 37.5%; }
+  .outset-s7              { margin-right: 43.75%; }
+  .outset-s8              { margin-right: 50%; }
+  .outset-s9              { margin-right: 56.25%; }
+  .outset-s10             { margin-right: 62.5%; }
+  .outset-s11             { margin-right: 68.75%; }
+  .outset-s12             { margin-right: 75%; }
+  .outset-s13             { margin-right: 81.25%; }
+  .outset-s14             { margin-right: 87.5%; }
+  .outset-s15             { margin-right: 93.75%; }
+
+  .outset-s1-3            { margin-right: 33.333333%; }
+  .outset-s2-3            { margin-right: 66.666666%; }
+
+  /* For devices larger than 550px */
+  @media (min-width: $sm) {
+
+    .m1              { width: 6.25%; }
+    .m2              { width: 12.5%; }
+    .m3              { width: 18.75%; }
+    .m4              { width: 25%; }
+    .m5              { width: 31.25%; }
+    .m6              { width: 37.5%; }
+    .m7              { width: 43.75%; }
+    .m8              { width: 50%; }
+    .m9              { width: 56.25%; }
+    .m10             { width: 62.5%; }
+    .m11             { width: 68.75%; }
+    .m12             { width: 75%; }
+    .m13             { width: 81.25%; }
+    .m14             { width: 87.5%; }
+    .m15             { width: 93.75%; }
+    .m16             { width: 100%; }
+
+    .m1-3             { width: 33.333333%; }
+    .m2-3             { width: 66.666666%; }
+
+    /* Offsets */
+    .offset-m1              { margin-left: 6.25%; }
+    .offset-m2              { margin-left: 12.5%; }
+    .offset-m3              { margin-left: 18.75%; }
+    .offset-m4              { margin-left: 25%; }
+    .offset-m5              { margin-left: 31.25%; }
+    .offset-m6              { margin-left: 37.5%; }
+    .offset-m7              { margin-left: 43.75%; }
+    .offset-m8              { margin-left: 50%; }
+    .offset-m9              { margin-left: 56.25%; }
+    .offset-m10             { margin-left: 62.5%; }
+    .offset-m11             { margin-left: 68.75%; }
+    .offset-m12             { margin-left: 75%; }
+    .offset-m13             { margin-left: 81.25%; }
+    .offset-m14             { margin-left: 87.5%; }
+    .offset-m15             { margin-left: 93.75%; }
+
+    .offset-s1-3            { margin-left: 33.333333%; }
+    .offset-s2-3            { margin-left: 66.666666%; }
+
+    /* Outsets */
+    .outset-m1              { margin-right: 6.25%; }
+    .outset-m2              { margin-right: 12.5%; }
+    .outset-m3              { margin-right: 18.75%; }
+    .outset-m4              { margin-right: 25%; }
+    .outset-m5              { margin-right: 31.25%; }
+    .outset-m6              { margin-right: 37.5%; }
+    .outset-m7              { margin-right: 43.75%; }
+    .outset-m8              { margin-right: 50%; }
+    .outset-m9              { margin-right: 56.25%; }
+    .outset-m10             { margin-right: 62.5%; }
+    .outset-m11             { margin-right: 68.75%; }
+    .outset-m12             { margin-right: 75%; }
+    .outset-m13             { margin-right: 81.25%; }
+    .outset-m14             { margin-right: 87.5%; }
+    .outset-m15             { margin-right: 93.75%; }
+
+    .outset-m1-3            { margin-right: 33.333333%; }
+    .outset-m2-3            { margin-right: 66.666666%; }
+  }
+
+
+  /* For devices larger than 1025px */
+  @media (min-width: $lrg) {
+
+    .l1              { width: 6.25%; }
+    .l2              { width: 12.5%; }
+    .l3              { width: 18.75%; }
+    .l4              { width: 25%; }
+    .l5              { width: 31.25%; }
+    .l6              { width: 37.5%; }
+    .l7              { width: 43.75%; }
+    .l8              { width: 50%; }
+    .l9              { width: 56.25%; }
+    .l10             { width: 62.5%; }
+    .l11             { width: 68.75%; }
+    .l12             { width: 75%; }
+    .l13             { width: 81.25%; }
+    .l14             { width: 87.5%; }
+    .l15             { width: 93.75%; }
+    .l16             { width: 100%; }
+
+    .l1-3             { width: 33.333333%; }
+    .l2-3             { width: 66.666666%; }
+
+    /* Offsets */
+    .offset-l1              { margin-left: 6.25%; }
+    .offset-l2              { margin-left: 12.5%; }
+    .offset-l3              { margin-left: 18.75%; }
+    .offset-l4              { margin-left: 25%; }
+    .offset-l5              { margin-left: 31.25%; }
+    .offset-l6              { margin-left: 37.5%; }
+    .offset-l7              { margin-left: 43.75%; }
+    .offset-l8              { margin-left: 50%; }
+    .offset-l9              { margin-left: 56.25%; }
+    .offset-l10             { margin-left: 62.5%; }
+    .offset-l11             { margin-left: 68.75%; }
+    .offset-l12             { margin-left: 75%; }
+    .offset-l13             { margin-left: 81.25%; }
+    .offset-l14             { margin-left: 87.5%; }
+    .offset-l15             { margin-left: 93.75%; }
+
+    .offset-l1-3            { margin-left: 33.333333%; }
+    .offset-l2-3            { margin-left: 66.666666%; }
+
+    /* Outsets */
+    .outset-l1              { margin-right: 6.25%; }
+    .outset-l2              { margin-right: 12.5%; }
+    .outset-l3              { margin-right: 18.75%; }
+    .outset-l4              { margin-right: 25%; }
+    .outset-l5              { margin-right: 31.25%; }
+    .outset-l6              { margin-right: 37.5%; }
+    .outset-l7              { margin-right: 43.75%; }
+    .outset-l8              { margin-right: 50%; }
+    .outset-l9              { margin-right: 56.25%; }
+    .outset-l10             { margin-right: 62.5%; }
+    .outset-l11             { margin-right: 68.75%; }
+    .outset-l12             { margin-right: 75%; }
+    .outset-l13             { margin-right: 81.25%; }
+    .outset-l14             { margin-right: 87.5%; }
+    .outset-l15             { margin-right: 93.75%; }
+
+    .outset-l1-3            { margin-right: 33.333333%; }
+    .outset-l2-3            { margin-right: 66.666666%; }
+  }
+}
