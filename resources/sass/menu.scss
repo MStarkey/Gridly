@@ -25,13 +25,11 @@ nav ul{
     position: relative;
     margin: 0;
     padding: 0;
-    z-index: 1000;
     width:100%;
 }
 nav ul li{
     text-transform: uppercase;
     font-weight: 300;
-    display:block;
     padding: 0;
     margin: 0;
     width:100%;
@@ -55,7 +53,6 @@ nav ul li ul{
     position: relative;
     left:0;
     top:0;
-    clear: both;
     width:100%;
     margin-bottom: 10px;
 }
@@ -83,53 +80,61 @@ nav ul ul li a.active{
         margin: 0;
     }
     nav{
-        width:auto;
+        position: relative;
+        width:100%;
+        padding-bottom: 20px;
     }
     nav ul{
         background: none;
-        display: table;
+        position: absolute;
         margin: 0;
         padding: 0;
         width:100%;
     }
     nav ul li{
-        display:table-cell;
-        height:auto;
-        padding: 0 2% 0;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding: 0;
         margin: 0;
         width:auto;
+        text-align: center;
+        font-size: 1em;
+        float: left;
     }
     nav ul li:last-child{
         display: none;
     }
     nav ul li a{
+        display:block;
+        padding: 5px 15px;
         text-decoration: none;
-        border-bottom: none;
     }
-    nav ul li a span{
-        padding: 0 0 5px;
-        border-bottom: 1px solid $black;
+    nav ul li a:hover,
+    nav ul li a.menuactive{
+        background: none;
     }
-    nav ul li a:hover span,
-    nav ul li a.menuactive span{
-        border-bottom: 1px solid $white;
-    }
-    nav ul li.search a:hover{
-        border: none;
-    }
-    nav ul li:first-child{
-        padding-left: 0;
-    }
-    nav ul li ul{
-        clear: both;
 
+    nav ul li ul{
+        position: relative;
+        left:0;
+        top:0;
+        width:100%;
+        margin-bottom: 10px;
+        z-index: 999;
     }
     nav ul li ul li{
+        background-color: $white;
+        float: none;
         display: block;
-        border:none;
+        border-bottom:none;
+        text-align: left;
     }
     nav ul ul li a{
         display: block;
+        padding: 5px 15px;
     }
-
+    nav ul ul li a:hover,
+    nav ul ul li a.active{
+        text-decoration: none;
+    }
 }
