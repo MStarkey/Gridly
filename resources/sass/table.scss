@@ -9,8 +9,10 @@ td, th{
     border-bottom:1px solid $lightgrey;
     vertical-align: top;
 }
-td:last-child, th:last-child{
-    border-right:none;
+td,th{
+    &:last-child{
+        border-right:none;
+    }
 }
 tfoot{
 
@@ -21,10 +23,13 @@ th{
 thead{
 
 }
-tr:last-child td, tr:last-child th{
-    border-bottom: none;
+tr {
+    &:last-child {
+        td,th{
+            border-bottom: none;
+        }
+    }
 }
-
 
 /* Medium size (Tablet portrait and higher) */
 @media (min-width: $md) {

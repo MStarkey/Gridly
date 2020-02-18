@@ -1,44 +1,55 @@
-var gulp = require("gulp"),
-  connect = require("gulp-connect-php");
-var browserSync = require("browser-sync");
-var sass = require("gulp-sass");
-var concat = require("gulp-concat");
-var autoprefixer = require("gulp-autoprefixer");
-var cleanCSS = require("gulp-clean-css");
+'use strict';
 
-gulp.task("connect", function() {
-  connect.server({
-    // bin: 'C:/wamp64/bin/php/php7.0.10/php.exe', // PC PHP7
-    // ini: 'C:/wamp64/bin/php/php7.0.10/php.ini', // PC PHP7
-    // bin: '/Applications/MAMP/bin/php/php7.0.12/bin/php', // MAC PHP7
-    // root: ["dist"],
-    // port: 8888,
-    // base: "http://localhost",
-    livereload: true
-  });
+var gulp         = require('gulp'),
+        sass = require('gulp-sass'),
+        plumber = require('gulp-plumber'),
+        notify = require('gulp-notify'),
+        livereload = require('gulp-livereload'),
+        autoprefixer = require('autoprefixer'),
+        sourcemaps = require('gulp-sourcemaps'),
+        postcss = require('gulp-postcss'),
+        csso = require('gulp-csso');
 
-  gulp.watch("**/*.php").on("change", function() {
-    browserSync.reload();
-  });
-  // gulp.watch('**/*.twig').on('change', function() {
-  //   browserSync.reload();
-  // });
-  gulp.watch("**/*.scss", ["scss"]).on("change", function() {
-    browserSync.reload();
-  });
-  // gulp.watch("**/*.js", ["scripts"]).on("change", browserSync.reload);
+var config = {
+    src           : './resources/sass/style.scss',
+    dest          : './assets/css/'
+};
+
+// Error message
+var onError = function (err) {
+    notify.onError({
+        title   : 'Gulp',
+        subtitle: 'Failure!',
+        message : 'Error: <%= error.message %>',
+        sound   : 'Beep'
+    })(err);
+
+    this.emit('end');
+};
+
+// Compile CSS
+gulp.task('styles', function () {
+    var stream = gulp
+            .src([config.src])
+            .pipe(plumber({errorHandler: onError}))
+            .pipe(sass({
+                outputStyle: 'nested',
+                precision: 10,
+                includePaths: ['.'],
+                onError: console.error.bind(console, 'Sass error:')
+            }));
+
+    return stream
+            .pipe(sourcemaps.init())
+            .pipe(postcss([ autoprefixer() ]))
+            .pipe(csso())
+            .pipe(sourcemaps.write('.'))
+            .pipe(gulp.dest('./assets/css/'));
 });
 
-// gulp.task("scripts", function() {
-//   gulp.src(["js/*.js"]).pipe(concat("all.js")).pipe(gulp.dest("./js/main/"));
-// });
+// listener task
+gulp.task('watch', function(){
+    livereload.listen();
+    gulp.watch('./resources/sass/*.scss', gulp.series('styles'));
 
-gulp.task("scss", function() {
-  return gulp
-    .src("./resources/sass/main.scss")
-    .pipe(sass().on("error", sass.logError))
-    .pipe(autoprefixer("last 2 versions"))
-    .pipe(gulp.dest("./assets/css/"));
 });
-
-gulp.task("default", ["connect"]);

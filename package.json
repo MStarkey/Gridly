@@ -1,31 +1,28 @@
 {
-  "name": "Gridly",
+  "name": "package",
   "version": "1.0.0",
-  "description": "CSSFramework for rapid development",
-  "main": "index.js",
+  "description": "Gulp and modules",
+  "main": "package.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "default"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "keywords": [
-    "gridly"
-  ],
-  "author": "Mark Starkey",
+  "author": "mstarkey",
   "license": "MIT",
-  "homepage": "",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-connect-php": "^1.0.1",
-    "gulp-sass": "^3.1.0"
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-series": "^1.0.2"
   },
   "dependencies": {
-    "rimraf": "^2.6.2"
+    "autoprefixer": "^9.6.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "hamburgers": "^1.1.3"
   }
 }

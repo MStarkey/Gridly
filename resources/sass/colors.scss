@@ -1,14 +1,23 @@
 
-.bg-black a,
-.bg-black nav a,
 .bg-black,
 .black-bordered-box{
-  color: $white;
+  a{
+    color: $white;
+  }
+  nav{
+    a{
+      color: $white;
+    }
+  }
 }
-.social a i,
-.bg-white a,
-.bg-white nav a,
 .bg-white,
 .white-bordered-box{
-  color: $black;
+  a{
+    color: $black;
+  }
+  nav{
+    a{
+      color: $black;
+    }
+  }
 }

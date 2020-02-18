@@ -1,48 +1,16 @@
-.bg-black .bordered-box{
-  display: block;
-  border: 1px solid $white;
-  color: $white;
-  font-weight: 300;
-  width:auto;
-}
-.bg-white .bordered-box{
-  display: block;
-  border: 1px solid $black;
-  color: $black;
-  font-weight: 300;
-  width:auto;
-}
-.download a{
-  background: url("/assets/img/sitewide/download-arrow.png") 96% center no-repeat;
-  padding: 4px 25px 3px 5px;
-  display: block;
-}
-/*.download span{
-  display: block;
-  padding: 3px 5px 0;
-  float: left;
-  line-height: 100%;
-}*/
-.download{
-  width:130px;
-  margin-left: 20px;
-  float: left;
-  height: auto;
-}
+/* Buttons */
+
 .btn{
-  a{
-    font-style: normal;
-    text-decoration: none;
-  }
   border-radius: 0;
   padding: 6px 30px;
   text-transform: uppercase;
   line-height: 100%;
   height: auto;
   margin-top: 30px;
-}
-.back-button{
-  margin-bottom: 40px;
+  a{
+    font-style: normal;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (min-width: $md) {
