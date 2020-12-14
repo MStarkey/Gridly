@@ -1,14 +1,10 @@
 'use strict';
 
-var gulp         = require('gulp'),
-        sass = require('gulp-sass'),
-        plumber = require('gulp-plumber'),
-        notify = require('gulp-notify'),
-        livereload = require('gulp-livereload'),
-        autoprefixer = require('autoprefixer'),
-        sourcemaps = require('gulp-sourcemaps'),
-        postcss = require('gulp-postcss'),
-        csso = require('gulp-csso');
+var gulp         = require('/Users/mstarkey/node_modules/gulp'),
+        sass         = require('/Users/mstarkey/node_modules/gulp-sass'),
+        plumber      = require('/Users/mstarkey/node_modules/gulp-plumber'),
+        notify       = require('/Users/mstarkey/node_modules/gulp-notify'),
+        livereload = require('/Users/mstarkey/node_modules/gulp-livereload');
 
 var config = {
     src           : './resources/sass/style.scss',
@@ -32,18 +28,9 @@ gulp.task('styles', function () {
     var stream = gulp
             .src([config.src])
             .pipe(plumber({errorHandler: onError}))
-            .pipe(sass({
-                outputStyle: 'nested',
-                precision: 10,
-                includePaths: ['.'],
-                onError: console.error.bind(console, 'Sass error:')
-            }));
+            .pipe(sass().on('error', sass.logError));
 
     return stream
-            .pipe(sourcemaps.init())
-            .pipe(postcss([ autoprefixer() ]))
-            .pipe(csso())
-            .pipe(sourcemaps.write('.'))
             .pipe(gulp.dest('./assets/css/'));
 });
 
