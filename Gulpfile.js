@@ -1,14 +1,14 @@
 'use strict';
-/* node_modules are local and used on multiple projects, please change location as required */
-var gulp         = require('~/node_modules/gulp'),
-        sass         = require('~/node_modules/gulp-sass'),
-        plumber      = require('~/node_modules/gulp-plumber'),
-        notify       = require('~/node_modules/gulp-notify'),
-        livereload = require('~/node_modules/gulp-livereload');
+// node_modules are local and used on multiple projects, please change location as required
+var gulp       = require('/Users/mstarkey/node_modules/gulp'),
+    sass       = require('/Users/mstarkey/node_modules/gulp-sass'),
+    plumber    = require('/Users/mstarkey/node_modules/gulp-plumber'),
+    notify     = require('/Users/mstarkey/node_modules/gulp-notify'),
+    livereload = require('/Users/mstarkey/node_modules/gulp-livereload');
 
 var config = {
-    src           : './resources/sass/style.scss',
-    dest          : './assets/css/'
+    src       : './resources/sass/style.scss',
+    dest      : './assets/css/'
 };
 
 // Error message
