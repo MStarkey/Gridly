@@ -1,10 +1,10 @@
 'use strict';
 
-var gulp         = require('/Users/mstarkey/node_modules/gulp'),
-        sass         = require('/Users/mstarkey/node_modules/gulp-sass'),
-        plumber      = require('/Users/mstarkey/node_modules/gulp-plumber'),
-        notify       = require('/Users/mstarkey/node_modules/gulp-notify'),
-        livereload = require('/Users/mstarkey/node_modules/gulp-livereload');
+var gulp         = require('~/node_modules/gulp'),
+        sass         = require('~/node_modules/gulp-sass'),
+        plumber      = require('~/node_modules/gulp-plumber'),
+        notify       = require('~/node_modules/gulp-notify'),
+        livereload = require('~/node_modules/gulp-livereload');
 
 var config = {
     src           : './resources/sass/style.scss',
