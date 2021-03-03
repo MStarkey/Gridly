@@ -1,7 +1,7 @@
 <div id="footer" class="row padding-top-40 padding-bottom-40">
     <div class="container">
         <div class="row padding-top-40">
-            <div class="col l1-3 m1-3 s12">
+            <div class="col l4 m4 s12">
                 <div class="box bs">
                     <ul class="social">
                         <li><a href="#" title="twitter"><i class="fa fa-twitter"></i></a></li>

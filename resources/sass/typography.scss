@@ -84,9 +84,10 @@ ul{
     li{
         list-style: none;
         padding-left: 15px;
-        &:before{
-            content: '+ ';
-            margin-left: -15px;
+    }
+    &.social{
+        li{
+            display:inline-block;
         }
     }
 }

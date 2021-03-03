@@ -1,0 +1,134 @@
+.col1,.col2,.col3,.col4,.col5{
+    p,ul,ol{
+        column-count: 1;
+        column-gap: 0;
+        column-width: 300px;
+        column-fill: auto;
+    }
+    h1,h2{
+        column-span: all;
+    }
+}
+
+@media only screen and (min-width: $md) {
+    .col1{
+        p,ul,ol{
+            column-count: 1;
+            column-gap: 0;
+            column-width: 300px;
+            column-fill: auto;
+        }
+
+        h1,h2{
+            column-span: all;
+        }
+    }
+    .col2,.col3,.col4,.col5{
+        p,ul,ol{
+            column-count: 2;
+            column-gap: 10px;
+            column-fill: auto;
+        }
+
+        h1,h2{
+            column-span: all;
+        }
+    }
+}
+
+@media only screen and (min-width: $lrg) {
+    .col1{
+        p,ul,ol{
+            column-count: 1;
+            column-gap: 0;
+            column-width: 300px;
+            column-fill: auto;
+        }
+
+        h1,h2{
+            column-span: all;
+        }
+    }
+    .col2{
+        p,ul,ol{
+            column-count: 2;
+            column-gap: 10px;
+            column-fill: auto;
+        }
+
+        h1,h2{
+            column-span: all;
+        }
+    }
+    .col3,.col4,.col5{
+        p,ul,ol{
+            column-count: 3;
+            column-gap: 10px;
+            column-width: 300px;
+            column-fill: auto;
+        }
+
+        h1,h2{
+            column-span: all;
+        }
+    }
+}
+
+@media only screen and (min-width: $xlrg) {
+    .col1{
+        p,ul,ol{
+            column-count: 1;
+            column-gap: 0;
+            column-width: 300px;
+            column-fill: auto;
+        }
+
+        h1,h2{
+            column-span: all;
+        }
+    }
+    .col2{
+        p,ul,ol{
+            column-count: 2;
+            column-gap: 10px;
+            column-fill: auto;
+        }
+
+        h1,h2{
+            column-span: all;
+        }
+    }
+    .col3{
+        p,ul,ol{
+            column-count: 3;
+            column-gap: 10px;
+            column-fill: auto;
+        }
+
+        h1,h2{
+            column-span: all;
+        }
+    }
+    .col4{
+        p,ul,ol{
+            column-count: 4;
+            column-gap: 10px;
+            column-fill: auto;
+        }
+
+        h1,h2{
+            column-span: all;
+        }
+    }
+    .col5{
+        p,ul,ol{
+            column-count: 5;
+            column-gap: 10px;
+            column-fill: auto;
+        }
+
+        h1,h2{
+            column-span: all;
+        }
+    }
+}

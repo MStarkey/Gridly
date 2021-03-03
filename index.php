@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Site Clone</title>
+        <title>Gridly Template</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +17,7 @@
         <meta name="theme-color" content="#ffffff">
 
         <link href="/assets/vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
         <link rel="stylesheet"  href="/assets/vendor/jquery.bxslider/jquery.bxslider.css">
         <link rel="stylesheet" href="/assets/css/override.css">
         <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -25,6 +25,9 @@
     .jumpnav{
         background: #000000;
         padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
     }
     .jumpnav ul{
         margin: 0;
@@ -39,9 +42,13 @@
         color: #FFFFFF;
         padding-right: 10px;
     }
+    .content .col .box{
+
+            border: 1px solid red;
+    }
 </style>
     </head>
-    <body id="grid<?php echo($_GET['grid']); ?>">
+    <body id="grid<?php echo($_GET['grid']); ?>"  class="menu-closed">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -54,11 +61,39 @@
                 </ul>
             </div>
         </div>
+        <button class="menu-btn hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+        </button>
+        <div class="row">
+
+            <div class="header">
+                <section id="header" class="row">
+                    <div class="col s12">
+                        <a class="logo" href="/"><img src="/assets/favicons/mstile-150x150.png" alt="Gridly"></a>
+                    </div>
+                </section>
+            </div>
+            <div class="menu-container animate-all-slow">
+                <nav id="nav" class="menu-nav">
+                    <ul>
+                        <li><a href="#"><span>Home</span></a></li>
+                        <li><a href="#"><span>Link Two</span></a></li>
+                        <li><a href="#"><span>Link Three</span></a></li>
+                        <li><a href="#"><span>Link Four</span></a></li>
+                        <li><a href="#"><span>Link Five</span></a></li>
+                        <li><a href="#"><span>Link Six</span></a></li>
+                        <li><a href="#"><span>Hidden Link</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <?php
             include("files/files.php");
         ?>
 
-        <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCLQJeveOKXbiepOT61dtZhTKym7tsWOPY"></script>
         <script src="/assets/vendor/fitie/fitie.js"></script>
         <script src="/assets/vendor/jquery.bxslider/jquery.bxslider.min.js"></script>
